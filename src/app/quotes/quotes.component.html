@@ -2,15 +2,21 @@
 
     <div>
         <h1>Quotes</h1>
-        <hr>
+        <br>
         <ul>
           <li *ngFor='let car of cars'>
-            {{car.name}}
+            {{car.name}} 
+            <br>
+            {{car.quote}}
+            <br>
+            {{car.author}}
+            <br>
+            {{car.newDate|date}}
           </li>
         </ul>
     </div>
+    <hr>
+    <div class="col-md-6">
 
-<div class="col-md-6">
-
-    <app-quotes-form (addEmma)="addNewEmma($event)"></app-quotes-form>
-</div>
+      <app-quotes-form (addEmma)="addNewEmma($event)"></app-quotes-form>
+   </div>
