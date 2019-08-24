@@ -6,26 +6,26 @@
     <div class="form-group">
 
           <label for="name" >Name</label>
-          <input type="text" required class="form-control" style="width:300px;">
+          <input type="text" required class="form-control" style="width:300px;" id="nom" [(ngModel)]="newEmma.name"name="name" #name="ngModel">
 
       </div>
       <br>
       <div class="form-group">
 
-          <label for="description">Quote</label>
-          <textarea class="form-control" id="quote" rows="4" required  style="width:500px;"></textarea>
+          <label for="quote">Quote</label>
+          <textarea class="form-control" id="quote" [(ngModel)]="newEmma.quote" name="quote" #quote="ngModel" rows="4" required  style="width:500px;"></textarea>
 
       </div>
       <br>
       <div class="form-group">
 
         <label for="author">Author</label>
-        <input type="text" required class="form-control" id="author"  style="width:300px;">
+        <input type="text" required class="form-control" id="author" [(ngModel)]="newEmma.author"name="author" #author="ngModel" style="width:300px;">
       </div>
       <div class="form-group">
-          <label for="complete">Published</label>
+          <label for="publi">Published</label>
           <br>
-          <input type='date' id="complete" required>
+          <input type='date' id="complete" [(ngModel)]="newEmma.publi"name="publi" #publi="ngModel" required>
       </div>
       <button type="submit" style="background-color:rgb(2, 2, 29);color:white;">Add Quote</button>
 

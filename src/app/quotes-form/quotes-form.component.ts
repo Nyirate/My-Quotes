@@ -9,11 +9,12 @@ import { Emma } from '../emma';
 export class QuotesFormComponent implements OnInit {
   
 
-    newEmma = new Emma("","","", new Date());
+    newEmma = new Emma(0,"","","", new Date());
   @Output() addEmma = new EventEmitter<Emma>();
   
     submitQuote(){
   this.addEmma.emit(this.newEmma);
+  console.log(this.newEmma)
     }
 
   constructor() { }
