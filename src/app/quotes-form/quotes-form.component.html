@@ -1,12 +1,11 @@
  <div class="container-fluid">
     <hr>
-    <form (ngSubmit)='submitQuote()' #emmaForm='ngForm'> 
 
 <div class="container-fluid" id="for">
   <h2 class="text-center" style="text-align:center;"></h2>
   <br>
-  <form>
-      <div class="form-group">
+  <form (ngSubmit)='submitQuote()' #emmaForm='ngForm'> 
+    <div class="form-group">
 
           <label for="name" >Name</label>
           <input type="text" required class="form-control" style="width:300px;">
@@ -30,8 +29,9 @@
           <br>
           <input type='date' id="complete" required>
       </div>
+      <button type="submit" style="background-color:rgb(2, 2, 29);color:white;">Add Quote</button>
+
   </form>
-  <button type="submit" style="background-color:rgb(2, 2, 29);color:white;">Add Quote</button>
   
 </div>
 

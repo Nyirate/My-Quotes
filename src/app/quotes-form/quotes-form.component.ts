@@ -1,5 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from'@angular/core';
-// import { Emma } from '../emma'
+import { Emma } from '../emma';
+
 @Component({
   selector: 'app-quotes-form',
   templateUrl: './quotes-form.component.html',
@@ -8,12 +9,12 @@ import { Component, OnInit, Output, EventEmitter } from'@angular/core';
 export class QuotesFormComponent implements OnInit {
   
 
-  //   newEmma = new Emma(0,"","", newDate());
-  // @Output() addGoal = new EventEmitter<Emma>();
+    newEmma = new Emma("","","", new Date());
+  @Output() addGoal = new EventEmitter<Emma>();
   
-  //   submitQuote(){
-  // this.addGoal.emit(this.newEmma);
-  //   }
+    submitQuote(){
+  this.addGoal.emit(this.newEmma);
+    }
 
   constructor() { }
 
