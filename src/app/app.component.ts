@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Emma } from './emma'
+
 
 @Component({
   selector: 'app-root',
@@ -7,11 +7,5 @@ import { Emma } from './emma'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  color:Emma []=[
-    // (""),
-    // (""),
-    // (""),
-    // (""),
-    // ("")
-  ]
+  
 }

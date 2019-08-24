@@ -10,10 +10,10 @@ export class QuotesFormComponent implements OnInit {
   
 
     newEmma = new Emma("","","", new Date());
-  @Output() addGoal = new EventEmitter<Emma>();
+  @Output() addEmma = new EventEmitter<Emma>();
   
     submitQuote(){
-  this.addGoal.emit(this.newEmma);
+  this.addEmma.emit(this.newEmma);
     }
 
   constructor() { }
