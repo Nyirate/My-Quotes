@@ -4,18 +4,18 @@
         <h1 style="margin-left:40%;">Quotes</h1>
         <br>
         <ul>
-          <li *ngFor='let car of cars;let i = index'>
-            {{car.name}} 
+          <li *ngFor='let cars of cars;let i = index'>
+            {{cars.name}} 
             <br>
-            {{car.quote}}
+            {{cars.quote}}
             <br>
-            {{car.author}}
+            {{cars.author}}
             <br>
-            {{car.newDate|date}}
+            {{cars.newDate|date}}
             <app-likes></app-likes>
             
           </li>
-          <!-- <app-details *ngIf='car.showDate' [car]='car' (isComplete) = 'deleteQuote($event,i)'></app-details>  -->
+          <!-- <app-details *ngIf='cars.showDate' [cars]='cars' (isComplete) = 'deleteQuote($event,i)'></app-details>  -->
         </ul>
        
     </div>
