@@ -9,9 +9,9 @@ export class DetailsComponent implements OnInit {
    @Input() coco: Emma;
    @Output() isComplete = new EventEmitter<boolean>();
 
-  //  emmaDelete(complete:boolean){
-  //   this.isComplete.emit(complete);
-  // }
+   deleteQuote(complete:boolean){
+    this.isComplete.emit(complete);
+  }
 
   //  like=0;
   //  upvote(){

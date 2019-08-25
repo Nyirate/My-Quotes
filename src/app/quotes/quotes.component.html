@@ -4,20 +4,24 @@
         <h1 style="margin-left:40%;">Quotes</h1>
         <br>
         <ul>
-          <li *ngFor='let coco of cars;let i = index'>
-            {{coco.name}} 
+          <li *ngFor='let car of cars;let i = index'>
+            {{car.name}} 
             <br>
-            {{coco.quote}}
+            {{car.quote}}
             <br>
-            {{coco.author}}
+            {{car.author}}
             <br>
-            {{coco.newDate|date}}
+            {{car.newDate|date}}
+            <app-likes></app-likes>
+            
           </li>
-          <!-- <app-details *ngIf='coco.showDate' [coco]='coco' (isComplete) = 'deleteQuote($event,i)'></app-details>  -->
+          <!-- <app-details *ngIf='car.showDate' [car]='car' (isComplete) = 'deleteQuote($event,i)'></app-details>  -->
         </ul>
        
     </div>
     <hr>
     <div class="col-md-6">
      <app-quotes-form (addEmma)="addNewEmma($event)"></app-quotes-form>
+     
+     
     </div>
