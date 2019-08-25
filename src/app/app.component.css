@@ -2,5 +2,11 @@
   background-image: url("http://www.4usky.com/data/out/101/164916792-water-droplets-wallpapers.jpg");
   background-repeat: no-repeat;
   background-size:cover;
+  height:100%;
   
+}
+.foot{
+  font-weight:bold;
+  background-color:rgb(4, 4, 17);
+  color: white;
 }
