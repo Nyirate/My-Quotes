@@ -14,9 +14,12 @@ export class QuotesComponent implements OnInit {
     new Emma(4,"Claudine","To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.","Ralph Waldo Emerson",new Date(2019,5,20)),
     new Emma(5,"Grace","We accept the love we think we deserve.","Stephen Chbosky",new Date(2013,9,11))
   ];
+  coco: any;
   Details(index){
     this.cars[index].showDate = !this.cars[index].showDate
   }
+ 
+  
   addNewEmma(car){
     let carlength=this.cars.length;
     car.id=carlength+1;

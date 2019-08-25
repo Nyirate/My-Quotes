@@ -15,6 +15,7 @@ export class QuotesFormComponent implements OnInit {
     submitQuote(){
   this.addEmma.emit(this.newEmma);
   console.log(this.newEmma)
+  this.newEmma=new Emma(0,"","","",new Date())
     }
 
   constructor() { }
