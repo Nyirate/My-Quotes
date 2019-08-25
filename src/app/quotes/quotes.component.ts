@@ -12,14 +12,13 @@ export class QuotesComponent implements OnInit {
     new Emma(2,"Raissa","Darkness cannot drive out darkness: only light can do that,Hate cannot drive out hate: only love can do that.","Martin Luther King Jr",new Date(2015,3,17)),
     new Emma(3,"Wendy","Without music, life would be a mistake.","Friedrich Nietzsche",new Date(2005,10,23))
   ];
-  car: any;
-  Details(index){
+  details(index){
     this.cars[index].showDate = !this.cars[index].showDate
   }
    
   deleteQuote(isComplete, index){
-    if (isComplete) {
-      let toDelete = confirm(`Are you sure you want to delete ${this.cars[index].name}?`)
+    // if (isComplete) {
+    //   let toDelete = confirm(`Are you sure you want to delete ${this.cars[index].name}?`)
 
       if (toDelete){
         this.cars.splice(index,1)

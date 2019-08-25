@@ -6,7 +6,7 @@ import{ Emma} from '../emma'
   styleUrls: ['./details.component.css']
 })
 export class DetailsComponent implements OnInit {
-   @Input() coco: Emma;
+   @Input() cars: Emma;
    @Output() isComplete = new EventEmitter<boolean>();
 
    deleteQuote(complete:boolean){

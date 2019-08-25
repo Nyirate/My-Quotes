@@ -13,9 +13,12 @@
             <br>
             {{cars.newDate|date}}
             <app-likes></app-likes>
-            
+            <app-details *ngIf='cars.showDate' [cars]='cars' (isComplete) = 'deleteQuote($event,i)'></app-details>
+            <br>
+            <br>
+            <button (click)= 'deleteQuote(true)'>Delete Quote</button> 
           </li>
-          <!-- <app-details *ngIf='cars.showDate' [cars]='cars' (isComplete) = 'deleteQuote($event,i)'></app-details>  -->
+          
         </ul>
        
     </div>
