@@ -1,7 +1,7 @@
 ##My-Quotes
 # by Emma NYIRATE
 
-This project was generated with [Angular CLI] ()
+This project was generated with [Angular CLI] ( https://nyirate.github.io/My-Quotes/)version 8.2.2
 
 ## Development server
 
@@ -22,18 +22,20 @@ Run ng build to build the project. The build artifacts will be stored in the dis
 
 ## Running unit tests
 
-Run ng test to execute the unit tests via Karma.
+Run ng test to execute the unit tests via [Karma.]( https://nyirate.github.io/My-Quotes/)
 
 ## Running end-to-end tests
 
-Run ng e2e to execute the end-to-end tests via Protractor.
+Run ng e2e to execute the end-to-end tests via [Protractor.](https://nyirate.github.io/My-Quotes/)
 
 
 ## Further help
-To get more help on the Angular CLI use ng help or go check out the Angular CLI README.
+To get more help on the Angular CLI use 'ng help' or go check out the [Angular CLI README.](https://nyirate.github.io/My-Quotes/)
 
 ## license 
 
-MIT License
+MIT License 2019
 
 ## Github link
+
+https://nyirate.github.io/My-Quotes/
